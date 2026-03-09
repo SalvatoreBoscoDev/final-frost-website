@@ -13,6 +13,26 @@ const FEATURES = [
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+        <path d="M3 21h18M3 7l9-4 9 4M4 11v10M20 11v10M8 11v4M12 11v4M16 11v4"/>
+      </svg>
+    ),
+    title: 'NPC Towns & Factions',
+    description:
+      'You don\'t have to build alone. Station your units inside existing NPC settlements — rent beds, take local jobs, construct buildings within their walls, and grow your influence from the inside.',
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+      </svg>
+    ),
+    title: 'Quests & Contracts',
+    description:
+      'Take contracts from faction leaders, complete quests for NPC towns, and earn reputation that opens new doors — or closes them. Every deal made in the frost has terms.',
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
         <circle cx="12" cy="8" r="4"/>
         <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
         <line x1="18" y1="8" x2="21" y2="8"/>
@@ -21,7 +41,7 @@ const FEATURES = [
     ),
     title: 'Deep Unit System',
     description:
-      'Every colonist tracks hunger, temperature, stress, and physical injuries across 6 body parts. Skills, personalities, and faction allegiances shape how they act and react.',
+      'Every colonist tracks hunger, temperature, stress, and physical injuries across 6 body parts. Skills, personalities, and faction allegiances shape how they act — and who they answer to.',
   },
   {
     icon: (
@@ -33,7 +53,17 @@ const FEATURES = [
     ),
     title: 'Squad Control',
     description:
-      'Form squads with hotkey controls and send them into the frozen world. Toggle between full autonomy and direct command. Right-click gives context-sensitive orders.',
+      'Form squads with hotkey controls and deploy them anywhere in the world — your colony, an NPC town, or deep into uncharted frost. Toggle between full autonomy and direct command.',
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+        <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+      </svg>
+    ),
+    title: 'World Map & Exploration',
+    description:
+      'A living node-based world map with NPC settlements, random encounters, and trade routes. Every journey into the frost is a calculated risk — discover new towns, forge new alliances, or never come back.',
   },
   {
     icon: (
@@ -46,16 +76,6 @@ const FEATURES = [
     title: 'Farming & Harvests',
     description:
       'A full agricultural cycle — till the soil, plant, maintain, and harvest. Zone-based field assignment keeps your colonists on task without micromanaging every step.',
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
-        <polygon points="3 11 22 2 13 21 11 13 3 11"/>
-      </svg>
-    ),
-    title: 'World Map & Exploration',
-    description:
-      'A node-based world map with random encounters during transit. Every journey into the frost is a calculated risk. Come back with supplies, or don\'t come back at all.',
   },
   {
     icon: (
@@ -79,17 +99,17 @@ export default function Features() {
         <div className="text-center mb-16 animate-on-scroll">
           <span className="section-subtitle">What Awaits</span>
           <h2 className="section-title">
-            Built to Break You
+            Your Colony, Your Rules —
             <br />
-            <span className="text-frost-400">And Let You Rebuild</span>
+            <span className="text-frost-400">A World That Plays By Its Own</span>
           </h2>
           <p className="font-body text-slate-400 max-w-2xl mx-auto text-sm md:text-base">
-            Final Frost isn't about winning — it's about the story of your colony. The
-            triumphs, the crises, and the quiet moment before the next disaster.
+            Build from scratch, embed in NPC towns, take quests, form factions. Final Frost
+            is as much about the world as it is about your settlement.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           {FEATURES.map((f, i) => (
             <div
               key={f.title}

@@ -68,6 +68,34 @@ const SYSTEMS = [
       'Passive background research while colonists are assigned elsewhere',
     ],
   },
+  {
+    id: 'factions',
+    label: 'NPC Towns',
+    title: 'A Living World Full of Other People',
+    description:
+      "You don't have to build alone in the wilderness. NPC towns are fully living settlements — your units can move in, rent lodging, find work, and construct buildings within their walls. Integrate, expand, and grow your influence without ever laying a single foundation stone of your own.",
+    details: [
+      'Units can live and work inside NPC settlements alongside their citizens',
+      'Build structures within NPC town boundaries — grow them from inside',
+      'Earn reputation with town factions through work, trade, and quests',
+      'Faction allegiances affect unit morale, dialogue options, and available contracts',
+      'Each NPC town has its own economy, politics, and needs you can exploit or support',
+    ],
+  },
+  {
+    id: 'quests',
+    label: 'Quests',
+    title: 'Every Deal Has Terms',
+    description:
+      "The world has problems and you have people. Take contracts from faction leaders, complete delivery runs, clear bandit camps, or help a struggling town survive the winter. Quests reward reputation, resources, and access — but some jobs come with strings attached.",
+    details: [
+      'Quest system driven by NPC town needs and faction politics',
+      'Dialogue choices that affect faction reputation and future opportunities',
+      'Contract rewards scale with difficulty and relationship standing',
+      'Failed quests have consequences — factions remember',
+      'Some quests unlock permanent town perks, building slots, or trade routes',
+    ],
+  },
 ]
 
 export default function Systems() {
@@ -80,12 +108,12 @@ export default function Systems() {
         <div className="text-center mb-16 animate-on-scroll">
           <span className="section-subtitle">Under the Hood</span>
           <h2 className="section-title">
-            Interlocking Systems
+            Interlocking Systems,
             <br />
-            <span className="text-frost-400">Built to Cascade</span>
+            <span className="text-frost-400">A World That Reacts</span>
           </h2>
           <p className="font-body text-slate-400 max-w-xl mx-auto text-sm md:text-base">
-            No system in Final Frost operates in isolation. They all feed into each other — that's what makes it dangerous.
+            No system operates in isolation. Your colonists, the NPC towns around you, the quests you take — they all feed into each other. That's what makes it dangerous.
           </p>
         </div>
 

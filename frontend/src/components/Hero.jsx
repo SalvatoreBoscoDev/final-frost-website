@@ -40,7 +40,7 @@ export default function Hero() {
         <div className="flex items-center justify-center gap-4 mb-10">
           <div className="h-px w-14 bg-frost-400/40" />
           <span className="font-heading text-frost-400 text-[0.65rem] uppercase tracking-[0.35em]">
-            Colony Survival Simulation
+            Open World Colony Survival
           </span>
           <div className="h-px w-14 bg-frost-400/40" />
         </div>
@@ -65,7 +65,7 @@ export default function Hero() {
 
         {/* Tagline */}
         <p className="font-heading text-lg md:text-2xl text-slate-300 mb-3 max-w-2xl mx-auto leading-snug">
-          Build your colony. Command your people.
+          Build your colony — or live in theirs.
         </p>
         <p className="font-heading text-lg md:text-2xl mb-8" style={{ color: '#4cc9f0' }}>
           Survive the eternal winter.
@@ -73,7 +73,7 @@ export default function Hero() {
 
         {/* Description */}
         <p className="font-body text-slate-400 text-sm md:text-base leading-relaxed mb-10 max-w-xl mx-auto">
-          A deep survival sim where systems bleed into each other — hunger breeds stress, stress breeds conflict, conflict breaks your colony. Every decision has a cost.
+          A deep open-world survival sim. Settle the frozen wilderness, embed your people in NPC towns, take quests, forge alliances, and watch every decision ripple through a world that never stops pushing back.
         </p>
 
         {/* CTAs */}
@@ -89,9 +89,9 @@ export default function Hero() {
         {/* Stats row */}
         <div className="mt-20 flex flex-col sm:flex-row gap-10 justify-center">
           {[
-            { value: 'Solo Dev',   label: 'Indie Made'     },
-            { value: 'Deep Sim',   label: 'Colony Systems' },
-            { value: 'Steam',      label: 'Coming Soon'    },
+            { value: 'Solo Dev',    label: 'Indie Made'       },
+            { value: 'Open World',  label: 'Explore & Settle' },
+            { value: 'Steam',       label: 'Coming Soon'      },
           ].map((s) => (
             <div key={s.label} className="text-center">
               <div

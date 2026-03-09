@@ -1,8 +1,10 @@
 const PILLARS = [
-  { label: 'Colony Management',    desc: 'Build and expand your frozen settlement' },
-  { label: 'Squad Expeditions',    desc: 'Send teams into the dangerous world map'  },
-  { label: 'Living Colonists',     desc: 'Every unit has vitals, traits, and a will' },
-  { label: 'Cascading Failures',   desc: 'Systems that feed into each other' },
+  { label: 'Colony Management',    desc: 'Build and expand your own frozen settlement' },
+  { label: 'NPC Towns',            desc: 'Settle inside existing factions — work, build, and live within their walls' },
+  { label: 'Quests & Contracts',   desc: 'Take jobs, complete quests, and shape faction relations' },
+  { label: 'Squad Expeditions',    desc: 'Send teams across the world map to explore and trade' },
+  { label: 'Living Colonists',     desc: 'Every unit has vitals, traits, skills, and a will of their own' },
+  { label: 'Cascading Failures',   desc: 'Every system bleeds into every other — nothing fails in isolation' },
 ]
 
 export default function About() {
@@ -15,20 +17,21 @@ export default function About() {
           <div className="animate-on-scroll">
             <span className="section-subtitle">The Game</span>
             <h2 className="section-title">
-              A Colony Sim That
+              Your Colony, Their World,
               <br />
-              <span className="text-frost-400">Never Lets You Rest</span>
+              <span className="text-frost-400">One Eternal Winter</span>
             </h2>
             <p className="font-body text-slate-400 leading-relaxed mb-5">
-              Final Frost is a deep colony survival simulation set in an unrelenting frozen world.
-              Manage your colonists, build your settlement, and send squads into the wilderness —
-              all while the cold slowly tightens its grip.
+              Final Frost is an open-world colony survival sim set in a living, frozen world.
+              Build your own settlement from the ground up — or send your people to live and work
+              inside existing NPC towns, integrate with their factions, take quests, and expand
+              from within.
             </p>
             <p className="font-body text-slate-400 leading-relaxed mb-10">
               Inspired by Kenshi and RimWorld, Final Frost is built around systemic
               interdependence. Hunger leads to stress. Stress leads to conflict. Conflict
-              cripples your production chain. Every system bleeds into every other, and the
-              winter waits for no one.
+              cripples your production chain. Every system bleeds into every other — and the
+              world keeps moving whether you're ready or not.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
