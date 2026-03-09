@@ -1,0 +1,19 @@
+[Unit]
+Description=Final Frost Django (gunicorn)
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/final-frost/backend
+EnvironmentFile=/var/www/final-frost/backend/.env
+ExecStart=/var/www/final-frost/backend/venv/bin/gunicorn \
+    --workers 3 \
+    --bind 127.0.0.1:8001 \
+    --access-logfile /var/log/finalfrost/access.log \
+    --error-logfile  /var/log/finalfrost/error.log \
+    config.wsgi:application
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

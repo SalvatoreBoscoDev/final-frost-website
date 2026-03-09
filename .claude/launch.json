@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Final Frost Frontend",
+      "runtimeExecutable": "C:\\Program Files\\nodejs\\node.exe",
+      "runtimeArgs": [
+        "C:\\Programming\\Final Frost Website\\frontend\\node_modules\\vite\\bin\\vite.js",
+        "C:\\Programming\\Final Frost Website\\frontend",
+        "--port", "5173"
+      ],
+      "port": 5173
+    }
+  ]
+}
