@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Features from './components/Features'
 import Systems from './components/Systems'
+import FAQ from './components/FAQ'
 import Devlog from './components/Devlog'
 import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
@@ -34,6 +35,8 @@ export default function App() {
       <Features />
       <div className="section-divider" />
       <Systems />
+      <div className="section-divider" />
+      <FAQ />
       <div className="section-divider" />
       <Devlog />
       <div className="section-divider" />

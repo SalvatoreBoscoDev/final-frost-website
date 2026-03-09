@@ -4,6 +4,7 @@ const NAV_LINKS = [
   { href: '#about',    label: 'About'    },
   { href: '#features', label: 'Features' },
   { href: '#systems',  label: 'Systems'  },
+  { href: '#faq',      label: 'FAQ'      },
   { href: '#devlog',   label: 'Devlog'   },
 ]
 
