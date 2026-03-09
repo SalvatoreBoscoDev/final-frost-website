@@ -1,0 +1,14 @@
+[Unit]
+Description=Gunicorn daemon for Final Frost website
+After=network.target
+
+[Service]
+User=marin
+Group=marin
+WorkingDirectory=/home/marin/final-frost/backend
+EnvironmentFile=/home/marin/final-frost/backend/.env
+ExecStart=/home/marin/final-frost/backend/venv/bin/gunicorn config.wsgi:application --bind 127.0.0.1:8001 --workers 3
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
