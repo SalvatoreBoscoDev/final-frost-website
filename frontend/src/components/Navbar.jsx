@@ -57,7 +57,7 @@ export default function Navbar() {
         </div>
 
         {/* CTA */}
-        <a href="#" className="hidden md:inline-flex btn-primary text-sm py-2 px-5">
+        <a href="https://store.steampowered.com/app/2927400/Final_Frost/" target="_blank" rel="noopener noreferrer" className="hidden md:inline-flex btn-primary text-sm py-2 px-5">
           Wishlist on Steam
         </a>
 
@@ -89,7 +89,7 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a href="#" className="btn-primary text-sm text-center mt-2">
+          <a href="https://store.steampowered.com/app/2927400/Final_Frost/" target="_blank" rel="noopener noreferrer" className="btn-primary text-sm text-center mt-2">
             Wishlist on Steam
           </a>
         </div>

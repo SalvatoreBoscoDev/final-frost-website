@@ -78,7 +78,7 @@ export default function Hero() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#" className="btn-primary text-base">
+          <a href="https://store.steampowered.com/app/2927400/Final_Frost/" target="_blank" rel="noopener noreferrer" className="btn-primary text-base">
             ★ Wishlist on Steam
           </a>
           <a href="#about" className="btn-secondary text-base">
